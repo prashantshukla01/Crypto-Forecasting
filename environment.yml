@@ -1,9 +1,16 @@
-name: crypto-env
+name: crypto-forecast
 channels:
-  - default
   - conda-forge
+  - defaults
 dependencies:
   - python=3.9
+  - flask
+  - pandas
+  - numpy
+  - scikit-learn
+  - joblib
+  - requests
   - pip
   - pip:
-      - -r requirement.txt
+    - ta
+    - lightgbm
